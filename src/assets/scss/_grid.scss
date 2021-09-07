@@ -1,31 +1,26 @@
+// Szerkezethez (flex)
+
 .grid {
     display: grid;
-    &.header-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "logo logo logo logo icons icons icons icons" "logo logo logo logo search search search search";
-        @media screen and (min-width: $tablet) {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas: "menu logo logo logo logo logo logo logo logo search search search search search icons icons icons";
-        }
+    grid-template-columns: 1fr 1fr;
+    &.swiper-slide {
+        grid-template-columns: 2fr 1fr;
     }
-    &.grid-2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        @media screen and (min-width: $tablet) {
-            grid-template-columns: 1fr 1fr;
-        }
+
+    &#footer {
+        margin-left: 2rem;
+        grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: " . . . . . "
+        " . . . . social";
+        gap: 1rem;
     }
 }
 
 .flex {
     display: flex;
-    &.flex-row {
-        flex-direction: row;
-    }
-    &.flex-row-center {
-        align-items: center;
-    }
-    &.flex-space-between {
-        justify-content: space-between;
-    }
+}
+
+.flex-col {
+    flex-direction: column;
 }

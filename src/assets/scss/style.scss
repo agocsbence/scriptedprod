@@ -53,12 +53,12 @@ $desktop-large: 2200px;
 
 html {
     scroll-behavior: smooth;
-    background: $green;
+    background: $white;
 }
 
 body {
     background-color: $white;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'NeueMontreal-Bold';
     font-size: $font-size;
     color: $black;
     line-height: 1.5;
@@ -77,6 +77,9 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    font-family: 'NeueMontreal-Regular';
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 img {
@@ -90,7 +93,7 @@ img {
 body,
 h3,
 h4 {
-    color: $orange;
+    color: $black;
 }
 
 h1,
@@ -103,10 +106,10 @@ h6 {
 }
 
 h1 {
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 50px;
+    line-height: 50px;
     font-weight: 700;
-    color: $green-dark;
+    color: $white;
     margin-bottom: 3rem;
     margin-top: .8rem;
 }
@@ -127,6 +130,7 @@ p {
 
 p {
     margin-bottom: 15px;
+    font-family: 'NeueMontreal-Regular';
 }
 
 small {
@@ -254,6 +258,10 @@ marquee {
 
 .py-6 {
     padding: 6rem 0;
+}
+
+.px-1 {
+    padding: 0 1rem;
 }
 
 .m-0 {
@@ -562,4 +570,112 @@ marquee {
 
 .show {
     display: block;
+}
+
+#hero {
+    background-color: $black;
+    padding-top: 40px;
+
+    .swiper-pagination {
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .slider-img {
+        background-size: cover !important;
+        background-position: center !important;
+        padding-bottom: 56.25% !important;
+        background-repeat: no-repeat !important;
+    }
+
+    #keresztanyu-slider {
+        background: url('../img/KERESZTANYU.png');
+    }
+    
+    #luxus-slider {
+        background: url('../img/SZULETETT\ FELESEGEK.jpg');
+    }
+
+    #stilusparbaj-slider {
+        background: url('../img/STILUSPARBAJ.jpg');
+    }
+
+    #hotel-margaret-slider {
+        background: url('../img/HOTEL_MARGARET.jpg');
+    }
+}
+
+.description {
+    color: $white;
+    h1 {
+        width: 60%;
+    }
+}
+
+.swiper-pagination-bullet {
+    background: rgb(240, 240, 240) !important;
+    opacity: .6;
+    &.swiper-pagination-bullet-active {
+        background: $white !important;
+        opacity: 1;
+    }
+}
+main {
+    margin-top: 130px;
+}
+
+#productions-list {
+    text-align: center;
+    h1 {
+        color: $black !important;
+    }
+    
+    .list {
+        justify-content: center;
+        text-transform: uppercase;
+        gap: 1rem;
+        margin: 0 auto;
+
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+
+#productions .production {
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 56.25%;
+    background-repeat: no-repeat;
+
+    &#keresztanyu {
+        background: url('../img/KERESZTANYU.png');
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 56.25%;
+    }
+    
+    &#luxus {
+        background: #000;
+        background-size: 80vh;
+        height: 40vh;
+        background-position: center;
+        padding-bottom: 56.25%;
+        
+    }
+    
+    &#stilusparbaj {
+        background: url('../img/STILUSPARBAJ.jpg');
+        background-size: 100vh;
+        background-position: center;
+        padding-bottom: 56.25%;
+    }
+    
+    &#hotel_margaret {
+        background: url('../img/HOTEL_MARGARET.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 56.25%;
+    }
 }
