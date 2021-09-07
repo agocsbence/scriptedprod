@@ -232,6 +232,22 @@ marquee {
     padding-top: 6rem !important;
 }
 
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pr-3 {
+    padding-right: 3rem;
+}
+
+.pr-4 {
+    padding-right: 4rem;
+}
+
 .py-0 {
     padding: 0 0;
 }
@@ -607,8 +623,15 @@ marquee {
 
 .description {
     color: $white;
+    width: 90%;
     h1 {
         width: 60%;
+        margin-bottom: 6rem;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
     }
 }
 
@@ -663,6 +686,9 @@ main {
         background-position: center;
         padding-bottom: 56.25%;
         
+        h1 {
+            line-height: 3.5rem;
+        }
     }
     
     &#stilusparbaj {
