@@ -14,6 +14,10 @@
         grid-template-areas: " . . . . . "
         " . . . . social";
         gap: 1rem;
+    } 
+
+    &#team {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 

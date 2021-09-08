@@ -748,3 +748,36 @@ main {
         padding-bottom: 56.25%;
     }
 }
+
+#producer {
+    background: $black;
+    #producer-img {
+        background: gray;//url('../img/Rectangle\ 23.png');
+        background-size: cover !important;
+        background-position: center !important;
+        padding-bottom: 70.25% !important;
+        background-repeat: no-repeat !important;
+    }
+
+    img {
+        width: 20%;
+    }
+}
+
+#team {
+    .team-member {
+        .member-img {
+            background: url('../img/Rectangle\ 19.png');
+            height: 45vh;
+        }
+
+        .member-name {
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .member-title {
+            font-size: 15px;
+        }
+    }
+}
