@@ -396,6 +396,25 @@ marquee {
     margin: 6rem 0;
 }
 
+.mx-1 {
+    margin: 0 1rem;
+}
+.mx-2 {
+    margin: 0 2rem;
+}
+.mx-3 {
+    margin: 0 3rem;
+}
+.mx-4 {
+    margin: 0 4rem;
+}
+.mx-5 {
+    margin: 0 5rem;
+}
+.mx-6 {
+    margin: 0 6rem;
+}
+
 .ml-0 {
     margin-left: 0 !important;
 }
@@ -672,6 +691,15 @@ main {
     padding-bottom: 56.25%;
     background-repeat: no-repeat;
 
+    h2 {
+        color: $white;
+        font-family: 'NeueMontreal-Bold';
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+        grid-area: h2;
+    }
+
     &#keresztanyu {
         background: url('../img/KERESZTANYU.png');
         background-size: cover;
@@ -690,10 +718,25 @@ main {
             line-height: 3.5rem;
         }
     }
+
+    &#luxus-pic{
+        background: url('../img/SZULETETT\ FELESEGEK.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 56.25%;
+    }
     
     &#stilusparbaj {
         background: url('../img/STILUSPARBAJ.jpg');
         background-size: 100vh;
+        background-position: center;
+        padding-bottom: 56.25%;
+    }
+
+    &#stilusparbaj-pic {
+        background: url('../img/STILUSPARBAJ.jpg');
+        background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
     }
