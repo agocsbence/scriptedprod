@@ -645,7 +645,7 @@ marquee {
     width: 90%;
     h1 {
         width: 60%;
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
     }
 
     p {
@@ -690,6 +690,7 @@ main {
     background-position: center;
     padding-bottom: 56.25%;
     background-repeat: no-repeat;
+    position: relative;
 
     h2 {
         color: $white;
@@ -698,6 +699,10 @@ main {
         font-size: 20px;
         text-align: center;
         grid-area: h2;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &#keresztanyu {
@@ -759,9 +764,17 @@ main {
         background-repeat: no-repeat !important;
     }
 
-    img {
-        width: 20%;
+    .signature {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        img {
+            max-width: 160px;
+
+        }
     }
+    
 }
 
 #team {

@@ -19,6 +19,10 @@
     &#team {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+    &.producer {
+        grid-template-columns: 1.5fr 1fr;
+    }
 }
 
 .flex {
