@@ -129,7 +129,7 @@ p {
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-family: 'NeueMontreal-Regular';
 }
 
@@ -443,6 +443,10 @@ marquee {
     margin-left: 6rem !important;
 }
 
+.ml-30precent {
+    margin-left: 30% !important;
+}
+
 .mr-0 {
     margin-right: 0 !important;
 }
@@ -710,6 +714,14 @@ main {
         background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
+        transition: filter .5s ease-in-out;
+        -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+        filter: grayscale(0%); /* FF 35+ */
+    }
+
+    &#keresztanyu:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
     
     &#luxus {
@@ -718,10 +730,17 @@ main {
         background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
-        
+        transition: filter .5s ease-in-out;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
         h1 {
             line-height: 3.5rem;
         }
+    }
+
+    &#luxus:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
 
     &#luxus-pic{
@@ -737,7 +756,15 @@ main {
         background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
+        transition: filter .5s ease-in-out;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
     }
+
+    &#stilusparbaj:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    } 
 
     &#stilusparbaj-pic {
         background: url('../img/STILUSPARBAJ.jpg');
@@ -751,6 +778,14 @@ main {
         background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
+        transition: filter .5s ease-in-out;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+
+    &#hotel_margaret:hover {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
 }
 
@@ -917,4 +952,21 @@ main {
     background-size: cover;
     background-position: center;
     padding-bottom: 56.25%;
+}
+
+#keresztanyu {
+    background: url('../img/KERESZTANYU.png');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 56.25%;
+}
+
+.keresztanyu-subpage {
+    h1 {
+        color: $black;
+    }
+}
+
+a:hover {
+    text-decoration: underline;
 }
