@@ -720,6 +720,7 @@ main {
     grid-area: h2;
     position: absolute;
     bottom: 2rem;
+    letter-spacing: .8px;
     left: 50%;
     transform: translateX(-50%); }
   #productions .production#keresztanyu {
@@ -729,9 +730,7 @@ main {
     padding-bottom: 56.25%;
     transition: filter .5s ease-in-out;
     -webkit-filter: grayscale(0%);
-    /* Ch 23+, Saf 6.0+, BB 10.0+ */
-    filter: grayscale(0%);
-    /* FF 35+ */ }
+    filter: grayscale(0%); }
   #productions .production#keresztanyu:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
@@ -749,12 +748,6 @@ main {
   #productions .production#luxus:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
-  #productions .production#luxus-pic {
-    background: url("../img/SZULETETT FELESEGEK.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 56.25%; }
   #productions .production#stilusparbaj {
     background: url("../img/STILUSPARBAJ.jpg");
     background-size: cover;
@@ -766,11 +759,6 @@ main {
   #productions .production#stilusparbaj:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
-  #productions .production#stilusparbaj-pic {
-    background: url("../img/STILUSPARBAJ.jpg");
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 56.25%; }
   #productions .production#hotel_margaret {
     background: url("../img/HOTEL_MARGARET.jpg");
     background-size: cover;
