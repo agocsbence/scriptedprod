@@ -768,6 +768,9 @@ main {
     #producer .signature img {
       max-width: 160px; }
 
+#team hr {
+  border-top: 2px solid #000; }
+
 #team .team-member .member-img {
   background: url("../img/Rectangle 19.png");
   height: 60vh; }

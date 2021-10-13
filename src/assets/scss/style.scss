@@ -777,6 +777,10 @@ main {
 }
 
 #team {
+    hr {
+        border-top: 2px solid $black;
+    }
+
     .team-member {
         .member-img {
             background: url('../img/Rectangle\ 19.png');
