@@ -28,8 +28,11 @@
         </div>
     </header>
     <main>
-        <div>
-            <div id="map" style="height: 600px;" class="m-4"></div>
+        <section class="pt-4 flex" id="gag">
+            <p>Scripted productions</p><p>N 47°29'54.3</p><p>E 19°3'23.8</p>
+        </section>
+        <section>
+            <div id="map" style="height: 600px;" class="m-2"></div>
     <script>
       function initMap() {
         const myLatLng = { lat: 47.504012, lng: 19.063299 };
@@ -183,14 +186,21 @@
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpBFMN3CaUl-GwCYY5HjOb8hotxpTjL5M&callback=initMap"></script>
-        </div>
+        </section>
+        <section class="ml-2 flex" id="info">
+            <div>
+                <img src="./assets/img/HUN.png" alt="">
+            </div>
+            <p>Budapest,<br> Liszt Ferenc tér 10,<br> 1061</p>
+            <p>info@scriptedprod.hu<br> +36 1 1234 567</p>
+        </section>
     </main>
 <footer id="footer" class="grid">
     <img src="./assets/img/Scripted logo-01.png" alt="logo">
-    <a href="">Főoldal</a>
-    <a href="">Produkciók</a>
-    <a href="">Csapat</a>
-    <a href="" class="px-1 mr-3" id="contact">kapcsolat</a>
+    <a href="index.html">Főoldal</a>
+    <a href="produkciok.html">Produkciók</a>
+    <a href="csapat.html">Csapat</a>
+    <a href="kapcsolat.html" class="px-1 mr-3" id="contact">kapcsolat</a>
     <p>Copyright © 2021 Monday Media  All Rights Reserved</p>
     <a href="">Cookiek</a>
     <a href="">Adatvédelmi nyilatkozat</a>

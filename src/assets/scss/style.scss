@@ -713,9 +713,9 @@ main {
     }
     
     &#luxus {
-        background: #000;
-        background-size: 80vh;
+        background: url('../img/SZULETETT\ FELESEGEK.jpg');
         height: 40vh;
+        background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
         
@@ -734,7 +734,7 @@ main {
     
     &#stilusparbaj {
         background: url('../img/STILUSPARBAJ.jpg');
-        background-size: 100vh;
+        background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
     }
@@ -793,4 +793,60 @@ main {
             font-size: 15px;
         }
     }
+}
+
+#gag p {
+    margin-left: 2rem;
+    margin-right: 20%;
+}
+
+#info {
+    img {
+        height: auto;
+    }
+    
+    p {
+    margin-left: 22%;
+    }
+}
+
+#keresztanyu-project {
+    background: url('../img/KERESZTANYU.png');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 56.25%;
+}
+
+#keresztanyu-infos {
+    h1 {
+        color: $black;
+        margin-right: 10%;
+    } 
+    #actors {
+        width: 40%;
+        #actors-title {
+            font-weight: 800;
+        }
+
+        p {
+            line-height: 1rem;
+        }
+    }
+    
+    p {
+        margin-right: 10%;
+        line-height: 1rem;
+        white-space: nowrap;
+    }
+
+    #producer-name {
+        margin-bottom: 15px;
+    }
+}
+
+#keresztanyu-video1 {
+    background: url('../img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 56.25%;
 }
