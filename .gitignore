@@ -1,5 +1,4 @@
 node_modules/
-dist/
 src/assets/.DS_Store
 src/assets/scss/.DS_Store
 .DS_Store
