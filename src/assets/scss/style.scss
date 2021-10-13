@@ -757,8 +757,7 @@ main {
 #producer {
     background: $black;
     #producer-img {
-        background: gray;//url('../img/Rectangle\ 23.png');
-        background-size: cover !important;
+        background: url('../img/Hamori\ Barbara.jpg');
         background-position: center !important;
         padding-bottom: 70.25% !important;
         background-repeat: no-repeat !important;
@@ -781,7 +780,71 @@ main {
     .team-member {
         .member-img {
             background: url('../img/Rectangle\ 19.png');
-            height: 45vh;
+            height: 60vh;
+
+            &#dozsa-eniko {
+                background: url('../img/Dozsa\ Eniko.jpg');
+            }
+
+            &#horvath-antal {
+                background: url('../img/Horvath\ Antal.jpg');
+            }
+
+            &#toth-csaba {
+                background: url('../img/Toth\ Csaba.jpg');
+            }
+
+            &#balazs-andor {
+                background: url('../img/Balazs\ Andor.jpg');
+            }
+
+            &#kocsis-rita {
+                background: url('../img/Kocsis\ Rita.jpg');
+            }
+
+            &#zsingor-daniel {
+                background: url('../img/Zsingor\ Daniel.jpg');
+            }
+
+            &#egyed-rita {
+                background: url('../img//Egyed\ Rita.jpg');
+            }
+
+            &#korossy-anett {
+                background: url('../img/Korossy\ Anett.jpg');
+            }
+
+            &#balazs-ivan {
+                background: url('../img/Balazs\ Ivan.jpg');
+            }
+
+            &#czak-szilvia {
+                background: url('../img/Czak\ Szilvia.jpg');
+            }
+
+            &#hangyal-judit {
+                background: url('../img/Hangyal\ Judit.jpg');
+            }
+
+            &#borsos-miklos {
+                background: url('../img/Borsos\ Miklos.jpg');
+            }
+
+            &#dancsecs-ildiko {
+                background: url('../img/Dancsecs\ Ildiko.jpg');
+            }
+
+            &#farago-zsofia {
+                background: url('../img/Farago\ Zsofia.jpg');
+            }
+
+            &#fazekas-csaba {
+                background: url('../img/Fazekas\ Csaba.jpg');
+            }
+
+            &#horvath-mark {
+                background: url('../img/Horcath\ Mark.jpg');
+            }
         }
 
         .member-name {
@@ -792,6 +855,7 @@ main {
         .member-title {
             font-size: 15px;
         }
+
     }
 }
 
