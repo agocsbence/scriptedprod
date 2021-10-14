@@ -132,9 +132,6 @@ table {
       border-radius: 84px;
       color: #fff;
       padding: .4rem 2rem; }
-      @media screen and (min-width: 991px) {
-        .header .contact a {
-          margin-right: 2rem; } }
 
 .navbar {
   position: fixed;
@@ -177,8 +174,9 @@ footer {
   @media screen and (max-width: 991px) {
     footer .copyright {
       font-size: 12px; } }
-  footer .footer-right {
-    line-height: 2; }
+  @media screen and (max-width: 991px) {
+    footer .footer-right {
+      line-height: 2; } }
 
 .project-single {
   font-family: 'NeueMontreal-Regular'; }

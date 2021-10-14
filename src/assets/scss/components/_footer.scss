@@ -36,6 +36,8 @@ footer {
         }
     }
     .footer-right {
-        line-height: 2;
+        @media screen and (max-width: $tablet) {
+            line-height: 2;
+        }
     }
 }
