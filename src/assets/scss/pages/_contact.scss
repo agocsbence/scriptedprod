@@ -1,0 +1,37 @@
+#beforeMap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'grid1 grid2 grid3';
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'grid1 grid1' 'grid2 grid3';
+    }
+    .grid1 {
+        grid-area: grid1;
+    }
+    .grid2 {
+        grid-area: grid2;
+    }
+    .grid3 {
+        grid-area: grid3;
+    }
+}
+
+#afterMap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'grid11 grid12 grid13';
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'grid11 grid12' '. grid13';
+    }
+    .grid11 {
+        grid-area: grid11;
+    }
+    .grid12 {
+        grid-area: grid12;
+    }
+    .grid13 {
+        grid-area: grid13;
+    }
+}

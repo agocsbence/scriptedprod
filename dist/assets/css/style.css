@@ -61,8 +61,6 @@ table {
     @media screen and (min-width: 991px) {
       .grid.swiper-slide {
         grid-template-columns: 2fr 1.3fr; } }
-  .grid#team {
-    grid-template-columns: 1fr 1fr 1fr 1fr; }
   .grid.producer {
     grid-template-columns: 1fr 2fr; }
   .grid#producer {
@@ -74,9 +72,6 @@ table {
     .grid.grid-m-2 {
       grid-template-columns: 1fr 1fr; } }
 
-#team .grid {
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
-
 .flex {
   display: flex; }
   .flex.flex-space-between {
@@ -85,9 +80,11 @@ table {
     flex-wrap: wrap; }
   .flex.flex-4 .team-member {
     width: calc(25% - 2rem); }
-
-.flex-col {
-  flex-direction: column; }
+  @media screen and (max-width: 991px) {
+    .flex.m-flex-col {
+      flex-direction: column; } }
+  .flex.flex-col {
+    flex-direction: column; }
 
 @font-face {
   font-family: 'NeueMontreal-Bold';
@@ -192,6 +189,36 @@ footer {
     @media screen and (min-width: 991px) {
       .project-single h1 {
         margin: 3rem 0; } }
+
+#beforeMap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'grid1 grid2 grid3'; }
+  @media screen and (max-width: 991px) {
+    #beforeMap {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'grid1 grid1' 'grid2 grid3'; } }
+  #beforeMap .grid1 {
+    grid-area: grid1; }
+  #beforeMap .grid2 {
+    grid-area: grid2; }
+  #beforeMap .grid3 {
+    grid-area: grid3; }
+
+#afterMap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'grid11 grid12 grid13'; }
+  @media screen and (max-width: 991px) {
+    #afterMap {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'grid11 grid12' '. grid13'; } }
+  #afterMap .grid11 {
+    grid-area: grid11; }
+  #afterMap .grid12 {
+    grid-area: grid12; }
+  #afterMap .grid13 {
+    grid-area: grid13; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -853,16 +880,6 @@ main {
 
 #team .team-member .member-title {
   font-size: 15px; }
-
-#gag p {
-  margin-left: 2rem;
-  margin-right: 20%; }
-
-#info img {
-  height: auto; }
-
-#info p {
-  margin-left: 22%; }
 
 #keresztanyu-project {
   background: url("../img/KERESZTANYU.png");

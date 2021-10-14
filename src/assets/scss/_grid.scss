@@ -16,9 +16,6 @@
             grid-template-columns: 2fr 1.3fr;
         }
     }
-    &#team {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
     &.producer {
         grid-template-columns: 1fr 2fr;
     }
@@ -37,12 +34,6 @@
     }
 }
 
-#team {
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
 .flex {
     display: flex;
     &.flex-space-between {
@@ -56,8 +47,12 @@
             width: calc(25% - 2rem);
         }
     }
-}
-
-.flex-col {
-    flex-direction: column;
+    &.m-flex-col {
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+        }
+    }
+    &.flex-col {
+        flex-direction: column;
+    }
 }

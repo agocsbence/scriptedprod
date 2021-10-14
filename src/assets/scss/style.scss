@@ -28,6 +28,7 @@ $desktop-large: 2200px;
 @import 'components/menu';
 @import 'components/footer';
 @import 'pages/single';
+@import 'pages/contact';
 //style
 //tags
 * {
@@ -944,20 +945,6 @@ main {
         .member-title {
             font-size: 15px;
         }
-    }
-}
-
-#gag p {
-    margin-left: 2rem;
-    margin-right: 20%;
-}
-
-#info {
-    img {
-        height: auto;
-    }
-    p {
-        margin-left: 22%;
     }
 }
 

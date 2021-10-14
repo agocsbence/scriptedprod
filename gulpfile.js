@@ -49,6 +49,11 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/assets/js'))
 });
 
+gulp.task('copyJS', function() {
+    return gulp.src('src/assets/js/*.js')
+        .pipe(gulp.dest('dist/assets/js/'));
+});
+
 gulp.task('copyCSS', function() {
     return gulp.src('src/assets/css/*.css')
         .pipe(gulp.dest('dist/assets/css/'));
@@ -99,7 +104,7 @@ gulp.task('watchWP', function() {
 });
 
 gulp.task('wordpress', gulp.series('copyWPimage', 'copyWPstyle', 'copyPHP', 'watchWP'));
-gulp.task('default', gulp.series('imagemin', 'icons', 'fonts', 'copyHTML', 'copyPHP', 'copyCSS', 'scripts', 'styles', 'watch'));
+gulp.task('default', gulp.series('imagemin', 'icons', 'fonts', 'copyHTML', 'copyPHP', 'copyCSS', 'copyJS', 'styles', 'watch'));
 
 // Generate the icons. This task takes a few seconds to complete.
 // You should run it at least once to create the icons. Then,
