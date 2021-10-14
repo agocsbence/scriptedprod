@@ -563,6 +563,24 @@ marquee {
 }
 
 //classes
+.m-mt-1 {
+    @media screen and (max-width: $tablet) {
+        margin-top: 1rem;
+    }
+}
+
+.m-mt-2 {
+    @media screen and (max-width: $tablet) {
+        margin-top: 2rem;
+    }
+}
+
+.m-mt-3 {
+    @media screen and (max-width: $tablet) {
+        margin-top: 3rem;
+    }
+}
+
 .container {
     max-width: calc(100% - 2rem);
     margin: 0 auto;
@@ -576,6 +594,17 @@ marquee {
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+.btn {
+    background-color: $black;
+    border-radius: 84px;
+    color: $white;
+    padding: .4rem 2rem;
+    text-align: center;
+    @media screen and (max-width: $tablet) {
+        max-width: 160px;
+    }
 }
 
 .margin-bottom-0 {
