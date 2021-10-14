@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
     autoplay: {
-        delay: 5000,
+        delay: 8000,
         disableOnInteraction: true,
     },
     pagination: {
