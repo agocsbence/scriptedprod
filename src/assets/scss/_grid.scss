@@ -4,26 +4,25 @@
     &.swiper-slide {
         grid-template-columns: 2fr 1.3fr;
     }
-
     &#footer {
         margin-left: 2rem;
         grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 2fr 1fr;
-        grid-template-areas: " . . . . . "
-        " . . . . social";
+        grid-template-areas: " . . . . . " " . . . . social";
         gap: 1rem;
-    } 
-
+    }
     &#team {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
     &.producer {
         grid-template-columns: 1fr 2fr;
     }
-
     &#producer {
         grid-template-columns: 1fr 1fr;
+    }
+    .colspan2 {
+        grid-column-end: 5;
+        grid-column-start: 3;
     }
 }
 

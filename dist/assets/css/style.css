@@ -64,6 +64,9 @@ table {
     grid-template-columns: 1fr 2fr; }
   .grid#producer {
     grid-template-columns: 1fr 1fr; }
+  .grid .colspan2 {
+    grid-column-end: 5;
+    grid-column-start: 3; }
 
 #team .grid {
   grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -712,9 +715,6 @@ main {
     transition: filter .5s ease-in-out;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%); }
-  #productions .production#keresztanyu:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
   #productions .production#luxus {
     background: url("../img/SZULETETT FELESEGEK.jpg");
     height: 40vh;
@@ -726,9 +726,6 @@ main {
     filter: grayscale(0%); }
     #productions .production#luxus h1 {
       line-height: 3.5rem; }
-  #productions .production#luxus:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
   #productions .production#stilusparbaj {
     background: url("../img/STILUSPARBAJ.jpg");
     background-size: cover;
@@ -737,9 +734,6 @@ main {
     transition: filter .5s ease-in-out;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%); }
-  #productions .production#stilusparbaj:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
   #productions .production#hotel_margaret {
     background: url("../img/HOTEL_MARGARET.jpg");
     background-size: cover;
@@ -748,9 +742,6 @@ main {
     transition: filter .5s ease-in-out;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%); }
-  #productions .production#hotel_margaret:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
 
 #producer {
   background: #000; }
@@ -768,42 +759,6 @@ main {
 
 #team hr {
   border-top: 2px solid #000; }
-
-#team .team-member .member-img {
-  background: url("../img/Rectangle 19.png");
-  height: 60vh; }
-  #team .team-member .member-img#dozsa-eniko {
-    background: url("../img/Dozsa Eniko.jpg"); }
-  #team .team-member .member-img#horvath-antal {
-    background: url("../img/Horvath Antal.jpg"); }
-  #team .team-member .member-img#toth-csaba {
-    background: url("../img/Toth Csaba.jpg"); }
-  #team .team-member .member-img#balazs-andor {
-    background: url("../img/Balazs Andor.jpg"); }
-  #team .team-member .member-img#kocsis-rita {
-    background: url("../img/Kocsis Rita.jpg"); }
-  #team .team-member .member-img#zsingor-daniel {
-    background: url("../img/Zsingor Daniel.jpg"); }
-  #team .team-member .member-img#egyed-rita {
-    background: url("../img/Egyed Rita.jpg"); }
-  #team .team-member .member-img#korossy-anett {
-    background: url("../img/Korossy Anett.jpg"); }
-  #team .team-member .member-img#balazs-ivan {
-    background: url("../img/Balazs Ivan.jpg"); }
-  #team .team-member .member-img#czak-szilvia {
-    background: url("../img/Czak Szilvia.jpg"); }
-  #team .team-member .member-img#hangyal-judit {
-    background: url("../img/Hangyal Judit.jpg"); }
-  #team .team-member .member-img#borsos-miklos {
-    background: url("../img/Borsos Miklos.jpg"); }
-  #team .team-member .member-img#dancsecs-ildiko {
-    background: url("../img/Dancsecs Ildiko.jpg"); }
-  #team .team-member .member-img#farago-zsofia {
-    background: url("../img/Farago Zsofia.jpg"); }
-  #team .team-member .member-img#fazekas-csaba {
-    background: url("../img/Fazekas Csaba.jpg"); }
-  #team .team-member .member-img#horvath-mark {
-    background: url("../img/Horcath Mark.jpg"); }
 
 #team .team-member .member-name {
   font-size: 16px;
