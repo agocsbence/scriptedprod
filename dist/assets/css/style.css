@@ -765,6 +765,9 @@ main {
 #team hr {
   border-top: 2px solid #000; }
 
+#team .team-member .member-img img {
+  width: 100%; }
+
 #team .team-member .member-name {
   font-size: 16px;
   text-transform: uppercase; }
