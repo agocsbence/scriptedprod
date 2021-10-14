@@ -34,6 +34,17 @@
 
 .flex {
     display: flex;
+    &.flex-space-between {
+        justify-content: space-between;
+    }
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+    &.flex-4 {
+        .team-member {
+            width: calc(25% - 2rem);
+        }
+    }
 }
 
 .flex-col {

@@ -480,6 +480,12 @@ marquee {
     margin-right: 6rem !important;
 }
 
+.xl-mt-16 {
+    @media screen and (min-width: 1920px) {
+        margin-top: 16rem;
+    }
+}
+
 .my-auto {
     margin: auto 0;
 }
@@ -792,10 +798,10 @@ main {
 #producer {
     background: $black;
     #producer-img {
-        background: url('../img/Hamori\ Barbara.jpg');
-        background-position: center !important;
-        padding-bottom: 70.25% !important;
-        background-repeat: no-repeat !important;
+        // background: url('../img/Hamori\ Barbara.jpg');
+        // background-position: center !important;
+        // padding-bottom: 70.25% !important;
+        // background-repeat: no-repeat !important;
     }
     .signature {
         display: flex;

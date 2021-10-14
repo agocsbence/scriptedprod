@@ -73,6 +73,12 @@ table {
 
 .flex {
   display: flex; }
+  .flex.flex-space-between {
+    justify-content: space-between; }
+  .flex.flex-wrap {
+    flex-wrap: wrap; }
+  .flex.flex-4 .team-member {
+    width: calc(25% - 2rem); }
 
 .flex-col {
   flex-direction: column; }
@@ -507,6 +513,10 @@ marquee img {
 .mr-6 {
   margin-right: 6rem !important; }
 
+@media screen and (min-width: 1920px) {
+  .xl-mt-16 {
+    margin-top: 16rem; } }
+
 .my-auto {
   margin: auto 0; }
 
@@ -745,11 +755,6 @@ main {
 
 #producer {
   background: #000; }
-  #producer #producer-img {
-    background: url("../img/Hamori Barbara.jpg");
-    background-position: center !important;
-    padding-bottom: 70.25% !important;
-    background-repeat: no-repeat !important; }
   #producer .signature {
     display: flex;
     justify-content: flex-end;
