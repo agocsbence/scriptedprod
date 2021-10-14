@@ -27,7 +27,7 @@ $desktop-large: 2200px;
 @import 'components/header';
 @import 'components/menu';
 @import 'components/footer';
-@import 'pages/home';
+// @import 'pages/home';
 //style
 //tags
 * {
@@ -399,18 +399,23 @@ marquee {
 .mx-1 {
     margin: 0 1rem;
 }
+
 .mx-2 {
     margin: 0 2rem;
 }
+
 .mx-3 {
     margin: 0 3rem;
 }
+
 .mx-4 {
     margin: 0 4rem;
 }
+
 .mx-5 {
     margin: 0 5rem;
 }
+
 .mx-6 {
     margin: 0 6rem;
 }
@@ -619,31 +624,25 @@ marquee {
 #hero {
     background-color: $black;
     padding-top: 40px;
-
     .swiper-pagination {
         position: relative;
         margin-top: 40px;
     }
-
     .slider-img {
         background-size: cover !important;
         background-position: center !important;
         padding-bottom: 56.25% !important;
         background-repeat: no-repeat !important;
     }
-
     #keresztanyu-slider {
         background: url('../img/KERESZTANYU.png');
     }
-    
     #luxus-slider {
         background: url('../img/SZULETETT\ FELESEGEK.jpg');
     }
-
     #stilusparbaj-slider {
         background: url('../img/STILUSPARBAJ.jpg');
     }
-
     #hotel-margaret-slider {
         background: url('../img/HOTEL_MARGARET.jpg');
     }
@@ -656,7 +655,6 @@ marquee {
         width: 60%;
         margin-bottom: 4rem;
     }
-
     p {
         font-size: 20px;
         line-height: 30px;
@@ -671,6 +669,7 @@ marquee {
         opacity: 1;
     }
 }
+
 main {
     margin-top: 130px;
 }
@@ -680,19 +679,16 @@ main {
     h1 {
         color: $black !important;
     }
-    
     .list {
         justify-content: center;
         text-transform: uppercase;
         gap: 1rem;
         margin: 0 auto;
-
         p {
             font-size: 15px;
         }
     }
 }
-
 
 #productions .production {
     background-size: cover;
@@ -700,7 +696,6 @@ main {
     padding-bottom: 56.25%;
     background-repeat: no-repeat;
     position: relative;
-
     h2 {
         color: $white;
         font-family: 'NeueMontreal-Bold';
@@ -714,7 +709,6 @@ main {
         left: 50%;
         transform: translateX(-50%);
     }
-
     &#keresztanyu {
         background: url('../img/KERESZTANYU.png');
         background-size: cover;
@@ -724,12 +718,10 @@ main {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
     }
-
     &#keresztanyu:hover {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
     }
-    
     &#luxus {
         background: url('../img/SZULETETT\ FELESEGEK.jpg');
         height: 40vh;
@@ -743,12 +735,10 @@ main {
             line-height: 3.5rem;
         }
     }
-
     &#luxus:hover {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
     }
-    
     &#stilusparbaj {
         background: url('../img/STILUSPARBAJ.jpg');
         background-size: cover;
@@ -758,12 +748,10 @@ main {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
     }
-
     &#stilusparbaj:hover {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
-    } 
-    
+    }
     &#hotel_margaret {
         background: url('../img/HOTEL_MARGARET.jpg');
         background-size: cover;
@@ -773,7 +761,6 @@ main {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
     }
-
     &#hotel_margaret:hover {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
@@ -788,104 +775,80 @@ main {
         padding-bottom: 70.25% !important;
         background-repeat: no-repeat !important;
     }
-
     .signature {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-
         img {
             max-width: 160px;
-
         }
     }
-    
 }
 
 #team {
     hr {
         border-top: 2px solid $black;
     }
-
     .team-member {
         .member-img {
             background: url('../img/Rectangle\ 19.png');
             height: 60vh;
-
             &#dozsa-eniko {
                 background: url('../img/Dozsa\ Eniko.jpg');
             }
-
             &#horvath-antal {
                 background: url('../img/Horvath\ Antal.jpg');
             }
-
             &#toth-csaba {
                 background: url('../img/Toth\ Csaba.jpg');
             }
-
             &#balazs-andor {
                 background: url('../img/Balazs\ Andor.jpg');
             }
-
             &#kocsis-rita {
                 background: url('../img/Kocsis\ Rita.jpg');
             }
-
             &#zsingor-daniel {
                 background: url('../img/Zsingor\ Daniel.jpg');
             }
-
             &#egyed-rita {
                 background: url('../img/Egyed\ Rita.jpg');
             }
-
             &#korossy-anett {
                 background: url('../img/Korossy\ Anett.jpg');
             }
-
             &#balazs-ivan {
                 background: url('../img/Balazs\ Ivan.jpg');
             }
-
             &#czak-szilvia {
                 background: url('../img/Czak\ Szilvia.jpg');
             }
-
             &#hangyal-judit {
                 background: url('../img/Hangyal\ Judit.jpg');
             }
-
             &#borsos-miklos {
                 background: url('../img/Borsos\ Miklos.jpg');
             }
-
             &#dancsecs-ildiko {
                 background: url('../img/Dancsecs\ Ildiko.jpg');
             }
-
             &#farago-zsofia {
                 background: url('../img/Farago\ Zsofia.jpg');
             }
-
             &#fazekas-csaba {
                 background: url('../img/Fazekas\ Csaba.jpg');
             }
-
             &#horvath-mark {
                 background: url('../img/Horcath\ Mark.jpg');
             }
         }
-
         .member-name {
             font-size: 16px;
             text-transform: uppercase;
         }
-
         .member-title {
             font-size: 15px;
         }
-
     }
 }
 
@@ -898,9 +861,8 @@ main {
     img {
         height: auto;
     }
-    
     p {
-    margin-left: 22%;
+        margin-left: 22%;
     }
 }
 
@@ -915,24 +877,21 @@ main {
     h1 {
         color: $black;
         margin-right: 10%;
-    } 
+    }
     #actors {
         width: 40%;
         #actors-title {
             font-weight: 800;
         }
-
         p {
             line-height: 1rem;
         }
     }
-    
     p {
         margin-right: 10%;
         line-height: 1rem;
         white-space: nowrap;
     }
-
     #producer-name {
         margin-bottom: 15px;
     }

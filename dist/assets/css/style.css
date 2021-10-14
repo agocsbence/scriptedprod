@@ -158,47 +158,6 @@ footer {
       height: 60%;
       width: auto; }
 
-.grid--home-tiles {
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  margin-bottom: 9.5rem; }
-  .grid--home-tiles .grid-tile {
-    border-radius: 1rem;
-    background: #b9d461;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 2rem 1rem;
-    position: relative; }
-    .grid--home-tiles .grid-tile h2 {
-      font-size: 20px;
-      line-height: 26px;
-      font-weight: bold;
-      color: #fff; }
-    .grid--home-tiles .grid-tile.big-tile {
-      grid-column: 1 / span 2;
-      grid-row: span 2;
-      background: #f4c560; }
-    .grid--home-tiles .grid-tile.text-dark h2 {
-      color: #172d22; }
-    .grid--home-tiles .grid-tile.bg--image {
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .grid--home-tiles .grid-tile.bg--color.bg--color-green {
-      background-color: #b9d461; }
-    .grid--home-tiles .grid-tile.bg--color.bg--color-orange {
-      background-color: #f4c560; }
-    .grid--home-tiles .grid-tile#grid-extra {
-      background: #fdf6e1; }
-      .grid--home-tiles .grid-tile#grid-extra img {
-        position: absolute;
-        width: 70%;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
