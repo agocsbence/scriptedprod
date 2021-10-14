@@ -50,6 +50,10 @@ table {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  .grid.grid-3 {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .grid.grid-gap-1 {
+    grid-gap: 1rem; }
   .grid.swiper-slide {
     grid-template-columns: 2fr 1.3fr; }
   .grid#footer {
@@ -166,6 +170,14 @@ footer {
     footer .social img {
       height: 60%;
       width: auto; }
+
+.project-single {
+  font-family: 'NeueMontreal-Regular'; }
+  .project-single .project-cover {
+    width: 100%; }
+  .project-single h1 {
+    color: #000;
+    font-family: 'NeueMontreal-Bold'; }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -578,7 +590,7 @@ marquee img {
   text-align: center; }
 
 .container {
-  max-width: 960px;
+  max-width: calc(100% - 2rem);
   margin: 0 auto;
   position: relative; }
   @media screen and (max-width: 991px) {
@@ -755,6 +767,8 @@ main {
 
 #producer {
   background: #000; }
+  #producer #producer-img img {
+    display: block; }
   #producer .signature {
     display: flex;
     justify-content: flex-end;

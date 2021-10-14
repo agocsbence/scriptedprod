@@ -1,6 +1,12 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    &.grid-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &.grid-gap-1 {
+        grid-gap: 1rem;
+    }
     &.swiper-slide {
         grid-template-columns: 2fr 1.3fr;
     }

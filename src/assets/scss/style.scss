@@ -27,7 +27,7 @@ $desktop-large: 2200px;
 @import 'components/header';
 @import 'components/menu';
 @import 'components/footer';
-// @import 'pages/home';
+@import 'pages/single';
 //style
 //tags
 * {
@@ -564,7 +564,7 @@ marquee {
 
 //classes
 .container {
-    max-width: 960px;
+    max-width: calc(100% - 2rem);
     margin: 0 auto;
     position: relative;
     @media screen and (max-width: $tablet) {
@@ -802,6 +802,9 @@ main {
         // background-position: center !important;
         // padding-bottom: 70.25% !important;
         // background-repeat: no-repeat !important;
+        img {
+            display: block;
+        }
     }
     .signature {
         display: flex;
