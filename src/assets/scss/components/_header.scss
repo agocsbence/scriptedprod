@@ -7,19 +7,24 @@
     .logo {
         top: 2rem;
         img {
-            width: 10%;
+            width: 30%;
             margin: 1rem;
+            margin-right: 1rem;
+            @media screen and (min-width: $tablet) {
+                width: 10%;
+            }
         }
     }
-
     .contact {
         margin: auto 1rem auto 0;
         a {
             background-color: $black;
             border-radius: 84px;
             color: $white;
-            margin-right: 2rem;
             padding: .4rem 2rem;
+            @media screen and (min-width: $tablet) {
+                margin-right: 2rem;
+            }
         }
     }
 }

@@ -50,13 +50,20 @@ table {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media screen and (max-width: 991px) {
+    .grid.grid-m-1 {
+      grid-template-columns: 1fr; } }
   .grid.grid-3 {
     grid-template-columns: 1fr 1fr 1fr; }
   .grid.grid-gap-1 {
     grid-gap: 1rem; }
   .grid.swiper-slide {
-    grid-template-columns: 2fr 1.3fr; }
+    grid-template-columns: 1fr; }
+    @media screen and (min-width: 991px) {
+      .grid.swiper-slide {
+        grid-template-columns: 2fr 1.3fr; } }
   .grid#footer {
+    display: none;
     margin-left: 2rem;
     grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr;
@@ -120,16 +127,22 @@ table {
   .header .logo {
     top: 2rem; }
     .header .logo img {
-      width: 10%;
-      margin: 1rem; }
+      width: 30%;
+      margin: 1rem;
+      margin-right: 1rem; }
+      @media screen and (min-width: 991px) {
+        .header .logo img {
+          width: 10%; } }
   .header .contact {
     margin: auto 1rem auto 0; }
     .header .contact a {
       background-color: #000;
       border-radius: 84px;
       color: #fff;
-      margin-right: 2rem;
       padding: .4rem 2rem; }
+      @media screen and (min-width: 991px) {
+        .header .contact a {
+          margin-right: 2rem; } }
 
 .navbar {
   position: fixed;
@@ -642,8 +655,10 @@ marquee img {
   display: block; }
 
 #hero {
-  background-color: #000;
-  padding-top: 40px; }
+  background-color: #000; }
+  @media screen and (min-width: 991px) {
+    #hero {
+      padding-top: 40px; } }
   #hero .swiper-pagination {
     position: relative;
     margin-top: 40px; }
@@ -665,8 +680,17 @@ marquee img {
   color: #fff;
   width: 90%; }
   .description h1 {
-    width: 60%;
-    margin-bottom: 4rem; }
+    margin: 2rem;
+    margin-left: 0; }
+    @media screen and (min-width: 991px) {
+      .description h1 {
+        width: 60%;
+        margin-bottom: 4rem; } }
+    .description h1 .subtitle {
+      font-family: 'NeueMontreal-Regular';
+      display: block;
+      margin-top: 1rem;
+      font-size: 38px; }
   .description p {
     font-size: 20px;
     line-height: 30px; }
@@ -679,7 +703,10 @@ marquee img {
     opacity: 1; }
 
 main {
-  margin-top: 130px; }
+  margin-top: 110px; }
+  @media screen and (min-width: 991px) {
+    main {
+      margin-top: 130px; } }
 
 #productions-list {
   text-align: center; }
@@ -688,11 +715,18 @@ main {
   #productions-list .list {
     justify-content: center;
     text-transform: uppercase;
-    gap: 1rem;
     margin: 0 auto;
     letter-spacing: 1px; }
+    @media screen and (min-width: 991px) {
+      #productions-list .list {
+        gap: 1rem; } }
     #productions-list .list p {
-      font-size: 15px; }
+      font-size: 12px;
+      margin: 0 .5rem; }
+      @media screen and (min-width: 991px) {
+        #productions-list .list p {
+          margin: 0;
+          font-size: 15px; } }
 
 #productions .production {
   background-size: cover;
@@ -739,7 +773,6 @@ main {
     filter: grayscale(0%); }
   #productions .production#luxus {
     background: url("../img/SZULETETT FELESEGEK.jpg");
-    height: 40vh;
     background-size: cover;
     background-position: center;
     padding-bottom: 56.25%;

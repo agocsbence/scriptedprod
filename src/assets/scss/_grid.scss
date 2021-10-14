@@ -1,6 +1,11 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    &.grid-m-1 {
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
     &.grid-3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -8,9 +13,13 @@
         grid-gap: 1rem;
     }
     &.swiper-slide {
-        grid-template-columns: 2fr 1.3fr;
+        grid-template-columns: 1fr;
+        @media screen and (min-width: 991px) {
+            grid-template-columns: 2fr 1.3fr;
+        }
     }
     &#footer {
+        display: none;
         margin-left: 2rem;
         grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 2fr 1fr;

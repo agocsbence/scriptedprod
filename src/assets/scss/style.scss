@@ -629,7 +629,9 @@ marquee {
 
 #hero {
     background-color: $black;
-    padding-top: 40px;
+    @media screen and (min-width: $tablet) {
+        padding-top: 40px;
+    }
     .swiper-pagination {
         position: relative;
         margin-top: 40px;
@@ -658,8 +660,18 @@ marquee {
     color: $white;
     width: 90%;
     h1 {
-        width: 60%;
-        margin-bottom: 4rem;
+        margin: 2rem;
+        margin-left: 0;
+        @media screen and (min-width: $tablet) {
+            width: 60%;
+            margin-bottom: 4rem;
+        }
+        .subtitle {
+            font-family: 'NeueMontreal-Regular';
+            display: block;
+            margin-top: 1rem;
+            font-size: 38px;
+        }
     }
     p {
         font-size: 20px;
@@ -677,7 +689,10 @@ marquee {
 }
 
 main {
-    margin-top: 130px;
+    margin-top: 110px;
+    @media screen and (min-width: $tablet) {
+        margin-top: 130px;
+    }
 }
 
 #productions-list {
@@ -688,11 +703,18 @@ main {
     .list {
         justify-content: center;
         text-transform: uppercase;
-        gap: 1rem;
         margin: 0 auto;
         letter-spacing: 1px;
+        @media screen and (min-width: $tablet) {
+            gap: 1rem;
+        }
         p {
-            font-size: 15px;
+            font-size: 12px;
+            margin: 0 .5rem;
+            @media screen and (min-width: $tablet) {
+                margin: 0;
+                font-size: 15px;
+            }
         }
     }
 }
@@ -752,7 +774,7 @@ main {
     }
     &#luxus {
         background: url('../img/SZULETETT\ FELESEGEK.jpg');
-        height: 40vh;
+        // height: 40vh;
         background-size: cover;
         background-position: center;
         padding-bottom: 56.25%;
