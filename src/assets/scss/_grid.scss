@@ -30,6 +30,11 @@
             grid-template-columns: 1fr;
         }
     }
+    &.grid-m-2 {
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 #team {

@@ -70,6 +70,9 @@ table {
   @media screen and (max-width: 991px) {
     .grid.grid-m-1 {
       grid-template-columns: 1fr; } }
+  @media screen and (max-width: 991px) {
+    .grid.grid-m-2 {
+      grid-template-columns: 1fr 1fr; } }
 
 #team .grid {
   grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -184,7 +187,11 @@ footer {
     width: 100%; }
   .project-single h1 {
     color: #000;
-    font-family: 'NeueMontreal-Bold'; }
+    font-family: 'NeueMontreal-Bold';
+    margin: 1rem 0; }
+    @media screen and (min-width: 991px) {
+      .project-single h1 {
+        margin: 3rem 0; } }
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -253,7 +260,6 @@ h1 {
   font-size: 50px;
   line-height: 50px;
   font-weight: 700;
-  color: #fff;
   margin-bottom: 3rem;
   margin-top: .8rem; }
 
@@ -744,6 +750,12 @@ main {
           margin: 0;
           font-size: 15px; } }
 
+#productions {
+  padding-top: 1rem; }
+  @media screen and (min-width: 991px) {
+    #productions {
+      padding-top: 5rem; } }
+
 #productions .production {
   background-size: cover;
   background-position: center;
@@ -763,6 +775,10 @@ main {
     letter-spacing: .8px;
     left: 50%;
     transform: translateX(-50%); }
+    @media screen and (max-width: 991px) {
+      #productions .production h2 {
+        bottom: 1rem;
+        font-size: 15px; } }
   #productions .production .production-overlay {
     position: absolute;
     top: 0;

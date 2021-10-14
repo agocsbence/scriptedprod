@@ -109,7 +109,6 @@ h1 {
     font-size: 50px;
     line-height: 50px;
     font-weight: 700;
-    color: $white;
     margin-bottom: 3rem;
     margin-top: .8rem;
 }
@@ -748,6 +747,13 @@ main {
     }
 }
 
+#productions {
+    padding-top: 1rem;
+    @media screen and (min-width: $tablet) {
+        padding-top: 5rem;
+    }
+}
+
 #productions .production {
     background-size: cover;
     background-position: center;
@@ -767,6 +773,10 @@ main {
         letter-spacing: .8px;
         left: 50%;
         transform: translateX(-50%);
+        @media screen and (max-width: $tablet) {
+            bottom: 1rem;
+            font-size: 15px;
+        }
     }
     .production-overlay {
         position: absolute;
