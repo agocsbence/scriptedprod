@@ -134,9 +134,10 @@ function initMap() {
     });
 }
 var swiper = new Swiper(".mySwiper", {
+    loop: true,
     autoplay: {
-        delay: 8000,
-        disableOnInteraction: true,
+        delay: 5000,
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",

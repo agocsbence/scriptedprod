@@ -663,6 +663,15 @@ marquee {
     @media screen and (min-width: $tablet) {
         padding-top: 40px;
     }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
     .swiper-pagination {
         position: relative;
         margin-top: 40px;
@@ -674,16 +683,16 @@ marquee {
         background-repeat: no-repeat !important;
     }
     #keresztanyu-slider {
-        background: url('../img/KERESZTANYU.png');
+        background: url('../img/keresztanyu-slider.png');
     }
     #luxus-slider {
-        background: url('../img/SZULETETT\ FELESEGEK.jpg');
+        background: url('../img/felesegek-slider.jpg');
     }
     #stilusparbaj-slider {
-        background: url('../img/STILUSPARBAJ.jpg');
+        background: url('../img/stilusparbaj-slider.jpg');
     }
     #hotel-margaret-slider {
-        background: url('../img/HOTEL_MARGARET.jpg');
+        background: url('../img/hotel-slider.jpg');
     }
 }
 
@@ -693,6 +702,7 @@ marquee {
     h1 {
         margin: 2rem;
         margin-left: 0;
+        margin-top: 0;
         @media screen and (min-width: $tablet) {
             width: 60%;
             margin-bottom: 4rem;
@@ -707,6 +717,10 @@ marquee {
     p {
         font-size: 20px;
         line-height: 30px;
+        &.description-text {
+            overflow: scroll;
+            height: 50vh;
+        }
     }
 }
 
