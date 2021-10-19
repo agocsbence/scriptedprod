@@ -705,9 +705,10 @@ marquee {
     h1 {
         margin: 2rem;
         margin-left: 0;
-        margin-top: 0;
+        margin-top: 2rem;
         @media screen and (min-width: $tablet) {
             width: 60%;
+            margin-top: 0;
             margin-bottom: 4rem;
         }
         .subtitle {

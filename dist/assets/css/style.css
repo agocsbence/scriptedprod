@@ -748,10 +748,11 @@ marquee img {
   .description h1 {
     margin: 2rem;
     margin-left: 0;
-    margin-top: 0; }
+    margin-top: 2rem; }
     @media screen and (min-width: 991px) {
       .description h1 {
         width: 60%;
+        margin-top: 0;
         margin-bottom: 4rem; } }
     .description h1 .subtitle {
       font-family: 'NeueMontreal-Regular';
