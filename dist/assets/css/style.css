@@ -195,6 +195,10 @@ footer {
       .project-single h1 {
         margin: 3rem 0; } }
 
+.video-embed {
+  width: 100%;
+  height: 70vh; }
+
 #beforeMap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
