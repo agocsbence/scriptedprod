@@ -589,6 +589,18 @@ marquee img {
   font-size: 17px !important;
   line-height: 25px !important; }
 
+.w-10 {
+  max-width: 10% !important;
+  width: 10%; }
+
+.w-20 {
+  max-width: 20% !important;
+  width: 20%; }
+
+.w-40 {
+  max-width: 40% !important;
+  width: 40%; }
+
 .w-50 {
   max-width: 50% !important;
   width: 50%; }
@@ -613,6 +625,9 @@ marquee img {
   max-width: 100% !important;
   width: 100%; }
 
+.w-10,
+.w-20,
+.w-40,
 .w-50,
 .w-60,
 .w-70,
@@ -788,6 +803,8 @@ main {
   text-align: center; }
   #productions-list h1 {
     color: #000 !important; }
+    #productions-list h1 a {
+      font-family: 'NeueMontreal-Regular'; }
   #productions-list .list {
     justify-content: center;
     text-transform: uppercase;
