@@ -556,6 +556,14 @@ marquee {
     margin: 0 auto;
 }
 
+.m-w-30 {
+    @media screen and (max-width: $tablet) {
+        max-width: 20% !important;
+        width: 20%;
+        
+    }
+}
+
 .nomargin {
     margin: 0 !important;
 }
@@ -770,6 +778,7 @@ main {
             font-family: 'NeueMontreal-Regular';
         }
     }
+
     .list {
         justify-content: center;
         text-transform: uppercase;

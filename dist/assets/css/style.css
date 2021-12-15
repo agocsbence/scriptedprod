@@ -636,6 +636,11 @@ marquee img {
 .w-100 {
   margin: 0 auto; }
 
+@media screen and (max-width: 991px) {
+  .m-w-30 {
+    max-width: 20% !important;
+    width: 20%; } }
+
 .nomargin {
   margin: 0 !important; }
 
