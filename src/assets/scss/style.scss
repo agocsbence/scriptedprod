@@ -748,8 +748,15 @@ marquee {
         font-size: 20px;
         line-height: 30px;
         &.description-text {
+            height: auto;
+            overflow: none;
+        }
+        @media screen and (min-width: $tablet) {
+            &.description-text {
+            
             overflow: scroll;
             height: 50vh;
+            }
         }
     }
 }

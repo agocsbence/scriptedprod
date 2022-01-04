@@ -788,8 +788,12 @@ marquee img {
     font-size: 20px;
     line-height: 30px; }
     .description p.description-text {
-      overflow: scroll;
-      height: 50vh; }
+      height: auto;
+      overflow: none; }
+    @media screen and (min-width: 991px) {
+      .description p.description-text {
+        overflow: scroll;
+        height: 50vh; } }
 
 .swiper-pagination-bullet {
   background: #f0f0f0 !important;
