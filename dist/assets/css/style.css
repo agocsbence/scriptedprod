@@ -131,8 +131,13 @@ table {
         .header .logo img {
           width: 10%; } }
   .header .contact {
-    margin: auto 1rem auto 0; }
-    .header .contact a {
+    margin: auto 1rem auto 0;
+    display: flex; }
+    .header .contact .lang {
+      min-width: 50px;
+      text-align: right;
+      margin-left: 1rem; }
+    .header .contact .btn {
       background-color: #000;
       border-radius: 84px;
       color: #fff;

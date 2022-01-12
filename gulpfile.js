@@ -6,7 +6,8 @@ const gulp = require('gulp'),
     minify = require('gulp-minify'),
     concat = require('gulp-concat'),
     imagemin = require('gulp-imagemin'),
-    cachebust = require('gulp-cache-bust');
+    cachebust = require('gulp-cache-bust'),
+    staticI18nHtml = require('gulp-static-i18n-html');
 
 var realFavicon = require('gulp-real-favicon');
 var fs = require('fs');
@@ -47,6 +48,15 @@ gulp.task('scripts', function() {
         .pipe(concat('scripts.js'))
         .pipe(minify())
         .pipe(gulp.dest('dist/assets/js'))
+});
+
+gulp.task('i18n', function() {
+    return gulp.src('src/**/*.html')
+        .pipe(staticI18nHtml({
+        locale: 'hu',
+        locales: ['hu', 'en']
+    }))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('copyJS', function() {

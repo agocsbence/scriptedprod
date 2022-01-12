@@ -17,7 +17,13 @@
     }
     .contact {
         margin: auto 1rem auto 0;
-        a {
+        display: flex;
+        .lang {
+            min-width: 50px;
+            text-align: right;
+            margin-left: 1rem;
+        }
+        .btn {
             background-color: $black;
             border-radius: 84px;
             color: $white;

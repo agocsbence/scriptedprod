@@ -20,9 +20,11 @@
         "gulp-postcss": "^8.0.0",
         "gulp-real-favicon": "^0.3.2",
         "gulp-responsive-images": "0.0.4",
-        "gulp-sass": "^5.0.0"
+        "gulp-sass": "^5.0.0",
+        "gulp-static-i18n-html": "^0.4.0"
     },
     "dependencies": {
-        "node-sass": "^6.0.1"
+        "node-sass": "^6.0.1",
+        "static-i18n": "^0.2.10"
     }
 }
