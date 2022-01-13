@@ -137,6 +137,8 @@ table {
       min-width: 50px;
       text-align: right;
       margin-left: 1rem; }
+      .header .contact .lang .active {
+        font-weight: bold; }
     .header .contact .btn {
       background-color: #000;
       border-radius: 84px;
