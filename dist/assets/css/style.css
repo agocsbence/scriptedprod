@@ -197,10 +197,15 @@ footer {
   .project-single h1 {
     color: #000;
     font-family: 'NeueMontreal-Bold';
-    margin: 1rem 0; }
+    padding: 1rem 0;
+    margin: 0; }
     @media screen and (min-width: 991px) {
       .project-single h1 {
-        margin: 3rem 0; } }
+        padding: 3rem 0;
+        margin: 0; } }
+  @media screen and (min-width: 2000px) {
+    .project-single .container {
+      max-width: 1920px !important; } }
 
 .video-embed {
   width: 100%;
@@ -844,12 +849,13 @@ main {
       padding-top: 5rem; } }
 
 #productions .production {
-  background-size: cover;
+  background-size: 102%;
   background-position: center;
   padding-bottom: 56.25%;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all .3s ease; }
   #productions .production h2 {
     color: #fff;
     font-family: 'NeueMontreal-Bold';
@@ -861,7 +867,8 @@ main {
     bottom: 2rem;
     letter-spacing: 5px;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    text-shadow: 1px 1px 5px #000; }
     @media screen and (max-width: 991px) {
       #productions .production h2 {
         bottom: 1rem;
@@ -880,42 +887,10 @@ main {
     font-family: 'NeueMontreal-Bold';
     left: 100%;
     transition: all .3s ease; }
-  #productions .production:hover .production-overlay {
-    left: 0; }
-  #productions .production#keresztanyu {
-    background: url("../img/KERESZTANYU.png");
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 56.25%;
-    transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%); }
-  #productions .production#luxus {
-    background: url("../img/SZULETETT FELESEGEK.jpg");
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 56.25%;
-    transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%); }
-    #productions .production#luxus h1 {
-      line-height: 3.5rem; }
-  #productions .production#stilusparbaj {
-    background: url("../img/STILUSPARBAJ.jpg");
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 56.25%;
-    transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%); }
-  #productions .production#hotel_margaret {
-    background: url("../img/HOTEL_MARGARET.jpg");
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 56.25%;
-    transition: filter .5s ease-in-out;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%); }
+  #productions .production:hover {
+    background-size: 104%; }
+    #productions .production:hover .production-overlay {
+      left: 0; }
 
 #producer {
   background: #000; }
@@ -941,12 +916,6 @@ main {
 #team .team-member .member-title {
   font-size: 15px; }
 
-#keresztanyu-project {
-  background: url("../img/KERESZTANYU.png");
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 56.25%; }
-
 #keresztanyu-infos h1 {
   color: #000;
   margin-right: 10%; }
@@ -968,12 +937,6 @@ main {
 
 #keresztanyu-video1 {
   background: url("../img/1.jpg");
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 56.25%; }
-
-#keresztanyu {
-  background: url("../img/KERESZTANYU.png");
   background-size: cover;
   background-position: center;
   padding-bottom: 56.25%; }

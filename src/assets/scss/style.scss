@@ -813,12 +813,13 @@ main {
 }
 
 #productions .production {
-    background-size: cover;
+    background-size: 102%;
     background-position: center;
     padding-bottom: 56.25%;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+    transition: all .3s ease;
     h2 {
         color: $white;
         font-family: 'NeueMontreal-Bold';
@@ -831,6 +832,7 @@ main {
         letter-spacing: 5px;
         left: 50%;
         transform: translateX(-50%);
+        text-shadow: 1px 1px 5px $black;
         @media screen and (max-width: $tablet) {
             bottom: 1rem;
             font-size: 15px;
@@ -852,65 +854,10 @@ main {
         transition: all .3s ease;
     }
     &:hover {
+        background-size: 104%;
         .production-overlay {
             left: 0;
         }
-    }
-    &#keresztanyu {
-        background: url('../img/KERESZTANYU.png');
-        background-size: cover;
-        background-position: center;
-        padding-bottom: 56.25%;
-        transition: filter .5s ease-in-out;
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-    &#keresztanyu:hover {
-        // -webkit-filter: grayscale(100%);
-        // filter: grayscale(100%);
-    }
-    &#luxus {
-        background: url('../img/SZULETETT\ FELESEGEK.jpg');
-        // height: 40vh;
-        background-size: cover;
-        background-position: center;
-        padding-bottom: 56.25%;
-        transition: filter .5s ease-in-out;
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-        h1 {
-            line-height: 3.5rem;
-        }
-    }
-    &#luxus:hover {
-        // -webkit-filter: grayscale(100%);
-        // filter: grayscale(100%);
-    }
-    &#stilusparbaj {
-        background: url('../img/STILUSPARBAJ.jpg');
-        background-size: cover;
-        background-position: center;
-        padding-bottom: 56.25%;
-        transition: filter .5s ease-in-out;
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-    &#stilusparbaj:hover {
-        // -webkit-filter: grayscale(100%);
-        // filter: grayscale(100%);
-    }
-    &#hotel_margaret {
-        background: url('../img/HOTEL_MARGARET.jpg');
-        background-size: cover;
-        background-position: center;
-        padding-bottom: 56.25%;
-        transition: filter .5s ease-in-out;
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-    &#hotel_margaret:hover {
-        // -webkit-filter: grayscale(100%);
-        // filter: grayscale(100%);
     }
 }
 
@@ -1005,13 +952,6 @@ main {
     }
 }
 
-#keresztanyu-project {
-    background: url('../img/KERESZTANYU.png');
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 56.25%;
-}
-
 #keresztanyu-infos {
     h1 {
         color: $black;
@@ -1038,13 +978,6 @@ main {
 
 #keresztanyu-video1 {
     background: url('../img/1.jpg');
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 56.25%;
-}
-
-#keresztanyu {
-    background: url('../img/KERESZTANYU.png');
     background-size: cover;
     background-position: center;
     padding-bottom: 56.25%;
