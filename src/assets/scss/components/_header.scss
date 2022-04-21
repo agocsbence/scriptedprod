@@ -1,36 +1,38 @@
 .header {
-    background: $white;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    top: 0;
-    .logo {
-        top: 2rem;
-        img {
-            width: 30%;
-            margin: 1rem;
-            margin-right: 1rem;
-            @media screen and (min-width: $tablet) {
-                width: 10%;
-            }
-        }
+  background: $white;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  .logo {
+    top: 2rem;
+    img {
+      width: 30%;
+      margin: 1rem;
+      margin-right: 1rem;
+      @media screen and (min-width: $tablet) {
+        width: 10%;
+      }
     }
-    .contact {
-        margin: auto 1rem auto 0;
-        display: flex;
-        .lang {
-            min-width: 50px;
-            text-align: right;
-            margin-left: 1rem;
-            .active {
-                font-weight: bold;
-            }
-        }
-        .btn {
-            background-color: $black;
-            border-radius: 84px;
-            color: $white;
-            padding: .4rem 2rem;
-        }
+  }
+  .contact {
+    margin: auto 1rem auto 0;
+    display: flex;
+    .lang {
+      min-width: 60px;
+      text-align: right;
+      margin: 1rem 0;
+      margin-left: 1rem;
+      .active {
+        font-weight: bold;
+      }
     }
+    .btn {
+      background-color: $black;
+      border-radius: 84px;
+      color: $white;
+      padding: 0.4rem 2rem;
+      margin: 1rem 0;
+    }
+  }
 }

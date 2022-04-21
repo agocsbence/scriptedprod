@@ -134,8 +134,9 @@ table {
     margin: auto 1rem auto 0;
     display: flex; }
     .header .contact .lang {
-      min-width: 50px;
+      min-width: 60px;
       text-align: right;
+      margin: 1rem 0;
       margin-left: 1rem; }
       .header .contact .lang .active {
         font-weight: bold; }
@@ -143,7 +144,8 @@ table {
       background-color: #000;
       border-radius: 84px;
       color: #fff;
-      padding: .4rem 2rem; }
+      padding: 0.4rem 2rem;
+      margin: 1rem 0; }
 
 .navbar {
   position: fixed;
@@ -310,7 +312,7 @@ h1 {
   line-height: 50px;
   font-weight: 700;
   margin-bottom: 3rem;
-  margin-top: .8rem; }
+  margin-top: 0.8rem; }
 
 .h3-bigger {
   margin-bottom: 10px;
@@ -700,7 +702,7 @@ marquee img {
   background-color: #000;
   border-radius: 84px;
   color: #fff;
-  padding: .4rem 2rem;
+  padding: 0.4rem 2rem;
   text-align: center;
   line-height: 1 !important;
   display: inline; }
@@ -809,7 +811,7 @@ marquee img {
 
 .swiper-pagination-bullet {
   background: #f0f0f0 !important;
-  opacity: .6; }
+  opacity: 0.6; }
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #fff !important;
     opacity: 1; }
@@ -836,7 +838,7 @@ main {
         gap: 1rem; } }
     #productions-list .list p {
       font-size: 12px;
-      margin: 0 .5rem; }
+      margin: 0 0.5rem; }
       @media screen and (min-width: 991px) {
         #productions-list .list p {
           margin: 0;
@@ -855,7 +857,7 @@ main {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  transition: all .3s ease; }
+  transition: all 0.3s ease; }
   #productions .production h2 {
     color: #fff;
     font-family: 'NeueMontreal-Bold';
@@ -886,7 +888,7 @@ main {
     text-transform: capitalize;
     font-family: 'NeueMontreal-Bold';
     left: 100%;
-    transition: all .3s ease; }
+    transition: all 0.3s ease; }
   #productions .production:hover {
     background-size: 104%; }
     #productions .production:hover .production-overlay {
